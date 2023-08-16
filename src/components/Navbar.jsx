@@ -1,7 +1,11 @@
 import 'react';
 import Link from './Link';
-
+import {  Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
+import { useState } from 'react';
 const Navbar = () => {
+
+  const [open, setOpen] = useState(false);
+
     const routes = [
         {
           id: 1,
@@ -32,6 +36,10 @@ const Navbar = () => {
       
     return (
         <nav>
+         <div onClick={() => setOpen(!open)}> 
+          <span>{open === true ? 'open' : 'close'}</span>
+         <Bars3Icon className="h-6 w-6 text-blue-500" />
+         </div>
             <ul className='md:flex'>
                {
                 routes.map(route =><Link
