@@ -1,12 +1,13 @@
 import './App.css'
 import Navbar from './components/Navbar'
+import PriceList from './components/PriceList/PriceList'
 
 function App() {
   return (
-   <div>
-    <Navbar></Navbar>
-    <h1 className='text-7xl text-purple-600'>hello tailwind</h1>
-   </div>
+    <div>
+      <Navbar></Navbar>
+      <PriceList></PriceList>
+    </div>
   )
 }
 
