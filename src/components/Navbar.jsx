@@ -35,7 +35,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='bg-purple-400 '>
+    <nav className='px-4 bg-purple-400 '>
       <div onClick={() => setOpen(!open)} className='md:hidden'>
         <span>
           {open === true ?
